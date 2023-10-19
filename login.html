@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style>
+body{
+    background-image:url(background_login.jpg);
+    background-image: cover;
+    background-position: center;
+   }
+ 
+  
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background_login.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.login-container {
+    width: 20%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+   
+}
+
+/* Estilo para centrar las etiquetas encima de los campos de entrada */
+.input-container {
+    margin-bottom: 10px; /* Espaciado entre campos de entrada */
+    
+}
+ label {
+    display: block; /* Hace que las etiquetas se muestren como bloques, ocupando toda la línea */
+    margin-bottom: 5px; /* Espaciado entre la etiqueta y el campo de entrada */
+}
+input{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:darkred;
+}
+button{
+    background-color: black;
+    color:white;
+    padding: 5px 15px;
+    
+}
+button:hover{
+    background-color:grey ;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Zaira López">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <title>Inicio de Sesión</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form>
+            <div class="input-container">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="button" onclick="redirectToHome()">Iniciar Sesión</button>
+        </form>
+        <div id="register">
+            <p>¿Aún no te has registrado? <a href="registro.html">Registrarme</a></p>
+        </div>
+    </div>
+    <script>
+        function redirectToHome() {
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+</html>

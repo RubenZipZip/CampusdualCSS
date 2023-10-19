@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+   }
+
+   body{
+    background-color: #eae9d7;
+   }
+
+
+
+header{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(comida.jpg);
+    border-bottom: 5px solid darkred;
+}
+#header-div{
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:15px;
+     background-color:rgba(139, 0, 0, 0.5);
+}  
+
+#title_section{
+    text-align: center;
+    color: darkred; 
+    font-weight: 800; 
+    padding: 5px 0 10px  0;  
+
+}
+img{
+    width: 100px;
+    
+}
+img:hover{
+    transform: scale(1.5);
+}
+
+   
+.promociones{
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 40px 5px 40px;
+    padding: 20px;
+}
+.promocion{
+    background-color:#deb887 ;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 15px 25px 15px;
+    gap: 4px;
+    min-height: 200px;
+}
+
+footer{
+
+    text-align: center;
+    background-color:rgb(169, 37, 37);
+    padding: 15px;
+    
+  }
+  @media screen and (min-width:700px) and (max-width:1023px){
+    header{
+        background-image: url("header_media.jpg");
+    }
+    .promociones{
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columnas */ 
+    }
+  }
+    @media screen and (max-width:700px) {
+    header{
+        background-image: url("header_peque.png");
+    }
+    .promociones{
+        grid-template-columns:1fr;
+        /* 2 columnas */
+    }
+  }
+
