@@ -14,7 +14,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(comida.jpg);
+    background-image: url(assets/comida.jpg);
     border-bottom: 5px solid darkred;
 }
 #header-div{
@@ -70,7 +70,7 @@ footer{
   }
   @media screen and (min-width:700px) and (max-width:1023px){
     header{
-        background-image: url("header_media.jpg");
+        background-image: url("assets/header_media.jpg");
     }
     .promociones{
         grid-template-columns: repeat(2, 1fr);
@@ -79,7 +79,7 @@ footer{
   }
     @media screen and (max-width:700px) {
     header{
-        background-image: url("header_peque.png");
+        background-image: url("assets/header_peque.png");
     }
     .promociones{
         grid-template-columns:1fr;
